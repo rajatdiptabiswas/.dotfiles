@@ -18,7 +18,7 @@ dotfiles config --local status.showUntrackedFiles no
 
 Add the alias to .zshrc (or .bashrc)
 ```
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
+echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 ```
 
 ## Usage
