@@ -16,6 +16,11 @@ Set git status to hide untracked files
 dotfiles config --local status.showUntrackedFiles no
 ```
 
+Add a remote
+```
+dotfiles remote add origin git@github.com:USERNAME/.dotfiles.git
+```
+
 Add the alias to .zshrc (or .bashrc)
 ```
 echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
