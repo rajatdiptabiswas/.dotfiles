@@ -51,7 +51,7 @@ Checkout the actual content from the git repository to `$HOME`
 dotfiles checkout
 ```
 
-## Acknowledgments
+## Acknowledgements
 
 * [Anand Iyer](https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html) - A simpler way to manage your dotfiles
 * [Medium](https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b) - How to manage your dotfiles with git
