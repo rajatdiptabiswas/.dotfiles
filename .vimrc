@@ -11,6 +11,7 @@ Plug 'morhetz/gruvbox'
 " Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/nerdcommenter'
 call plug#end()                         " initialize plugin system
 
 
@@ -99,6 +100,9 @@ nnoremap <leader>u :GundoToggle<CR>
 " save session
 " nnoremap <leader>s :mksession<CR>
 
+" toggle nerdcommenter
+nmap <leader>/ <plug>NERDCommenterToggle
+vmap <leader>/ <plug>NERDCommenterToggle
 
 
 " Searching
