@@ -4,8 +4,12 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
 
+# Add new line before prompt
+PROMPT_COMMAND="printf '\n'"
+
+
 # Setting colors to terminal and customizing prompt
-export PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\n\$ "
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\n\$ "
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxGxDxabagacad
 alias ls='ls -GFh'
