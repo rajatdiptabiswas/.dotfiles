@@ -91,8 +91,11 @@ set novisualbell
 
 let mapleader=","       " change leader from \ to ,
 
-" remap ESC to jk
-inoremap jk <esc>
+" remap ESC
+inoremap fj <esc>
+inoremap jf <esc>
+" inoremap jk <esc>
+" inoremap kj <esc>
 
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
@@ -103,6 +106,7 @@ nnoremap <leader>u :GundoToggle<CR>
 " toggle nerdcommenter
 nmap <leader>/ <plug>NERDCommenterToggle
 vmap <leader>/ <plug>NERDCommenterToggle
+
 
 
 " Searching
@@ -149,7 +153,8 @@ nnoremap gV `[v`]
 
 
 
-" airline
+" vim-airline
+
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
