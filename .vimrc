@@ -13,6 +13,7 @@ Plug 'mbbill/undotree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-fugitive'
 call plug#end()                         " initialize plugin system
 
 
