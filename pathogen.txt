@@ -1,3 +1,0 @@
-Auto Pairs -  Insert or delete brackets, parens, quotes in pair
-https://github.com/jiangmiao/auto-pairs
-git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs
