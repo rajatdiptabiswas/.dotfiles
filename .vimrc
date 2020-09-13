@@ -6,10 +6,12 @@ execute pathogen#infect()
 " vim-plug
 call plug#begin('~/.vim/plugged')       " specify a directory for plugins
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'morhetz/gruvbox'
-" Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'mbbill/undotree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 call plug#end()                         " initialize plugin system
 
@@ -31,14 +33,10 @@ set background=dark     " set background color
 set termguicolors       " turn on true color mode
 " highlight Comment cterm=italic gui=italic
 
-" colorscheme palenight   " set color scheme
+colorscheme palenight   " set color scheme
+
 " let g:gruvbox_italic=1
-" colorscheme dracula
-
-" let g:dracula_italic=0
-" colorscheme dracula     " set color scheme
-
-colorscheme gruvbox
+" colorscheme gruvbox   " set color scheme
 
 
 
@@ -96,15 +94,18 @@ inoremap jf <esc>
 " inoremap jk <esc>
 " inoremap kj <esc>
 
-" toggle gundo
-nnoremap <leader>u :GundoToggle<CR>
-
 " save session
 " nnoremap <leader>s :mksession<CR>
 
 " toggle nerdcommenter
 nmap <leader>/ <plug>NERDCommenterToggle
 vmap <leader>/ <plug>NERDCommenterToggle
+
+" toggle nerdtree
+nmap <leader>nt :NERDTreeToggle<CR>
+
+" toggle undotree
+nmap <leader>ut :UndotreeToggle<CR>
 
 
 
