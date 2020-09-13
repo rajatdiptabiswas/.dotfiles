@@ -6,6 +6,8 @@ Plug 'drewtempelmeyer/palenight.vim'
 " Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mbbill/undotree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -87,10 +89,8 @@ set novisualbell
 let mapleader=","       " change leader from \ to ,
 
 " remap ESC
-inoremap fj <esc>
-inoremap jf <esc>
-" inoremap jk <esc>
-" inoremap kj <esc>
+inoremap jk <esc>
+inoremap kj <esc>
 
 " save session
 " nnoremap <leader>s :mksession<CR>
@@ -104,6 +104,9 @@ nmap <leader>nt :NERDTreeToggle<CR>
 
 " toggle undotree
 nmap <leader>ut :UndotreeToggle<CR>
+
+" fzf file search
+nmap <leader>f :Files<CR>
 
 
 
