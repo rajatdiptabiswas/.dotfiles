@@ -1,14 +1,12 @@
 " Plugins
 
-" pathogen
-execute pathogen#infect()
-
 " vim-plug
 call plug#begin('~/.vim/plugged')       " specify a directory for plugins
 Plug 'drewtempelmeyer/palenight.vim'
 " Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'jiangmiao/auto-pairs'
 Plug 'mbbill/undotree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
@@ -31,12 +29,12 @@ set autoread            " set to auto read when file is changed from outside
 syntax enable           " turn on syntax highlighting
 set background=dark     " set background color
 set termguicolors       " turn on true color mode
-" highlight Comment cterm=italic gui=italic
+highlight Comment cterm=italic gui=italic
 
-colorscheme palenight   " set color scheme
+colorscheme palenight
 
 " let g:gruvbox_italic=1
-" colorscheme gruvbox   " set color scheme
+" colorscheme gruvbox
 
 
 
