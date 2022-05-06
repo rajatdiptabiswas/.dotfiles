@@ -21,8 +21,8 @@ call plug#end()                         " initialize plugin system
 " General
 
 set history=500         " sets how many lines of history VIM has to remember
-filetype indent on      " load filetype-specific indent files
-filetype plugin on      " enable filetype plugin
+filetype indent on       " load filetype-specific indent files
+filetype plugin on       " enable filetype plugin
 set autoread            " set to auto read when file is changed from outside
 
 
