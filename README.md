@@ -1,57 +1,50 @@
 # .dotfiles
 
-## Getting started
-Create a `.dotfiles` folder in `$HOME`, which is used to track the dotfiles
-```
-git init --bare $HOME/.dotfiles
-```
-
-Create an alias `dotfiles`
-```
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-```
-
-Set git status to hide untracked files
-```
-dotfiles config --local status.showUntrackedFiles no
-```
-
-Add a remote
-```
-dotfiles remote add origin git@github.com:USERNAME/.dotfiles.git
-```
-
-Add the alias to .zshrc (or .bashrc)
-```
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
-```
-
 ## Usage
-Regular git commands can now be used with `dotfiles`
-```
-dotfiles status
-dotfiles add .vimrc
-dotfiles commit -m "Added .vimrc"
-dotfiles add .zshrc
-dotfiles commit -m "Added .zshrc"
-dotfiles push
+
+After installing `git`, clone the GitHub repository
+
+```bash
+git clone https://github.com/rajatdiptabiswas/.dotfiles.git $HOME/.dotfiles
 ```
 
-## Setting up environment in a new computer
-After installing `git`, clone the GitHub repository
+Install GNU Stow `stow`
+
+```bash
+# macOS
+brew install stow
+
+# Ubuntu
+sudo apt install stow
 ```
-git clone --bare https://github.com/USERNAME/dotfiles.git $HOME/.dotfiles
+
+Run `stow` to symlink files in `$HOME/.dotfiles` to `$HOME`
+
+```bash
+cd ~/.dotfiles
+stow .
 ```
-Define the alias in the current shell scope
+
+## Dependencies
+
+[Homebrew](https://brew.sh)
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+[vim-plug](https://github.com/junegunn/vim-plug)
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-Checkout the actual content from the git repository to `$HOME`
-```
-dotfiles checkout
+
+```shell
+vim
+:PlugInstall
 ```
 
 ## Acknowledgements
 
-* [Anand Iyer](https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html) - A simpler way to manage your dotfiles
-* [Medium](https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b) - How to manage your dotfiles with git
+- [Manage dotfiles with GNU Stow](https://dr563105.github.io/blog/manage-dotfiles-with-gnu-stow/)
+- [Using GNU Stow to Manage Symbolic Links for Your Dotfiles](https://systemcrafters.net/managing-your-dotfiles/using-gnu-stow/)
