@@ -33,6 +33,19 @@ stow .
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+[Oh My Zsh](https://ohmyz.sh)
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+```
+
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```bash
