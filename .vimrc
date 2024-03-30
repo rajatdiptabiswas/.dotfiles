@@ -63,17 +63,17 @@ set wrap                " wrap lines
 
 " UI Config
 
-set number              " show line numbers
-set showcmd             " show last command in bottom bar
-set cursorline          " highlight current line
-set wildmenu            " visual autocomplete for command menu
-set lazyredraw          " redraw only when we need to
-set showmatch           " highlight matching [{()}]
-set mat=2               " how many tenths of a second to blink when matching brackets
-set so=8                " set 8 lines to the cursor - when moving vertically using j/k
-set ruler               " always show current position
-set hid                 " buffer becomes hidden when it is abandoned
-set foldcolumn=1        " add a bit extra margin to the left
+set number relativenumber   " show relative line numbers
+set showcmd                 " show last command in bottom bar
+set cursorline              " highlight current line
+set wildmenu                " visual autocomplete for command menu
+set lazyredraw              " redraw only when we need to
+set showmatch               " highlight matching [{()}]
+set mat=2                   " how many tenths of a second to blink when matching brackets
+set so=8                    " set 8 lines to the cursor - when moving vertically using j/k
+set ruler                   " always show current position
+set hid                     " buffer becomes hidden when it is abandoned
+set foldcolumn=1            " add a bit extra margin to the left
 
 " configure backspace so it acts as it should act
 set backspace=eol,start,indent
