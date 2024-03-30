@@ -2,6 +2,13 @@
 
 ## Usage
 
+Install `zsh` shell
+
+```bash
+sudo apt install zsh
+sudo chsh -s /bin/zsh $USER
+```
+
 After installing `git`, clone the GitHub repository
 
 ```bash
@@ -42,19 +49,27 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/tree/master)
+
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
 
-```shell
-vim
-:PlugInstall
+vim +'PlugInstall --sync' +qa
 ```
 
 ## Acknowledgements
