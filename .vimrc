@@ -2,7 +2,7 @@
 
 " vim-plug
 call plug#begin('~/.vim/plugged')       " specify a directory for plugins
-Plug 'drewtempelmeyer/palenight.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -34,7 +34,7 @@ set background=dark     " set background color
 set termguicolors       " turn on true color mode
 highlight Comment cterm=italic gui=italic
 
-colorscheme palenight
+colorscheme dracula
 
 " let g:gruvbox_italic=1
 " colorscheme gruvbox
