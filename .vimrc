@@ -108,9 +108,6 @@ inoremap kj <esc>
 " save session
 " nnoremap <leader>s :mksession<CR>
 
-" toggle nerdcommenter
-nmap <leader>/ <plug>NERDCommenterToggle
-vmap <leader>/ <plug>NERDCommenterToggle
 
 " toggle nerdtree
 nmap <leader>nt :NERDTreeToggle<CR>
@@ -222,6 +219,23 @@ inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<C-g>
 " use <Tab> and <S-Tab> to navigate the completion list
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+
+
+" NERD Commenter
+
+" toggle NERD Commenter
+nmap <leader>/ <plug>NERDCommenterToggle
+vmap <leader>/ <plug>NERDCommenterToggle
+
+" add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" allow commenting and inverting empty lines
+let g:NERDCommentEmptyLines = 1
+" enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
 
 
 
