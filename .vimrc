@@ -102,6 +102,8 @@ inoremap kj <esc>
 " save session
 " nnoremap <leader>s :mksession<CR>
 
+" toggle relative line numbering
+nmap <leader>n :call ToggleNumber()<CR>
 
 
 
