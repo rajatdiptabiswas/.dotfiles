@@ -8,13 +8,13 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
-Plug 'mbbill/undotree'
-Plug 'tpope/vim-fugitive'
+" Plug 'mbbill/undotree'
+" Plug 'tpope/vim-fugitive'
 call plug#end()                         " initialize plugin system
 
 
@@ -211,14 +211,14 @@ inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 " fzf
 
 " toggle fzf
-nmap <leader>f :Files<CR>
+" nmap <leader>f :Files<CR>
 
 
 
 " NERDTree
 
 " toggle NERDTree
-nmap <leader>nt :NERDTreeToggle<CR>
+" nmap <leader>nt :NERDTreeToggle<CR>
 
 
 
@@ -242,7 +242,7 @@ let g:NERDToggleCheckAllLines = 1
 " undotree
 
 " toggle undotree
-nmap <leader>ut :UndotreeToggle<CR>
+" nmap <leader>ut :UndotreeToggle<CR>
 
 
 
