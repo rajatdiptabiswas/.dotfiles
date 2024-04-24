@@ -1,16 +1,17 @@
 " Plugins
 
 " vim-plug
+
 call plug#begin('~/.vim/plugged')       " specify a directory for plugins
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mbbill/undotree'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-fugitive'
@@ -20,68 +21,30 @@ call plug#end()                         " initialize plugin system
 
 " General
 
-set history=500         " sets how many lines of history VIM has to remember
+set history=500         " sets how many lines of history Vim has to remember
 filetype indent on      " load filetype-specific indent files
 filetype plugin on      " enable filetype plugin
 set autoread            " set to auto read when file is changed from outside
 
 
 
-" Colors and Visuals
-
-syntax enable           " turn on syntax highlighting
-set background=dark     " set background color
-set termguicolors       " turn on true color mode
-highlight Comment cterm=italic gui=italic
-
-colorscheme dracula
-
-" let g:gruvbox_italic=1
-" colorscheme gruvbox
-
-
-
-" Status line
+" Status Line
 
 set laststatus=2        " always show the status line
 set noshowmode          " do not show insert again
 
 
 
-" Spaces, Tabs and Indentation
+" Spaces, Tabs, and Indentation
 
-set tabstop=4           " number of visual spaces per TAB
+set tabstop=4           " number of visual spaces per tab
 set softtabstop=4       " number of spaces in tab when editing
 set shiftwidth=4        " number of spaces for an indent
 set expandtab           " tabs are spaces
 set smarttab            " be smart when using tabs
-set ai                  " auto indent
-set si                  " smart indent
+set autoindent          " auto indent
+set smartindent         " smart indent
 set wrap                " wrap lines
-
-
-
-" UI Config
-
-set number relativenumber   " show relative line numbers
-set showcmd                 " show last command in bottom bar
-set cursorline              " highlight current line
-set wildmenu                " visual autocomplete for command menu
-set lazyredraw              " redraw only when we need to
-set showmatch               " highlight matching [{()}]
-set mat=2                   " how many tenths of a second to blink when matching brackets
-set so=8                    " set 8 lines to the cursor - when moving vertically using j/k
-set ruler                   " always show current position
-set hid                     " buffer becomes hidden when it is abandoned
-set foldcolumn=1            " add a bit extra margin to the left
-
-" configure backspace so it acts as it should act
-set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
-
-" no annoying sound on errors
-set noerrorbells
-set novisualbell
 
 
 
@@ -96,12 +59,43 @@ vnoremap <C-c> :w !pbcopy<CR><CR>
 " vnoremap <C-c> :w !xclip -selection clipboard<CR><CR>
 
 
+" UI Config
 
-" Leader shortcuts
+set number relativenumber       " show relative line numbers
+set showcmd                     " show last command in bottom bar
+set cursorline                  " highlight current line
+set wildmenu                    " visual autocomplete for command menu
+set lazyredraw                  " redraw only when needed
+set showmatch                   " highlight matching [{()}]
+set matchtime=2                 " how many tenths of a second to blink when matching brackets
+set scrolloff=10                " set 10 lines to the cursor when moving vertically using j/k
+set ruler                       " always show current position
+set hidden                      " buffer becomes hidden when it is abandoned
+set foldcolumn=1                " add extra margin to the left
+set backspace=eol,start,indent  " add backspace defaults
+set whichwrap+=<,>,h,l          " allow cursor left/right to move to previous/next line at beginning/end of line 
+set noerrorbells                " disable error bells
+
+
+
+" Colors and Visuals
+
+syntax enable           " turn on syntax highlighting
+set background=dark     " set background color
+set termguicolors       " turn on true color mode
+highlight Comment cterm=italic gui=italic
+
+colorscheme dracula
+" let g:gruvbox_italic=1
+" colorscheme gruvbox
+
+
+
+" Leader Shortcuts
 
 let mapleader=","       " change leader from \ to ,
 
-" remap ESC
+" remap esc
 inoremap jk <esc>
 inoremap kj <esc>
 
@@ -128,7 +122,6 @@ set magic               " turn on regular expressions
 set smartcase           " be smart about cases when searching
 set ignorecase          " ignore case when searching
 
-" remap :nohlsearch to leader space
 nnoremap <leader><space> :nohlsearch<CR>
 
 
@@ -291,7 +284,7 @@ set writebackup
 
 
 
-" Custom helper functions
+" Custom Helper Functions
 
 " toggle between number and relativenumber
 function! ToggleNumber()
@@ -304,7 +297,7 @@ function! ToggleNumber()
 endfunc
 
 " strips trailing whitespace at the end of files
-" this is called on buffer write in the autogroup above
+" called on buffer write in the autogroup above
 function! <SID>StripTrailingWhitespaces()
     " save last search & cursor position
     let _s=@/
@@ -314,3 +307,4 @@ function! <SID>StripTrailingWhitespaces()
     let @/=_s
     call cursor(l, c)
 endfunction
+
