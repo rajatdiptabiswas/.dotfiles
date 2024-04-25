@@ -1,5 +1,14 @@
 # .dotfiles
 
+## Setup
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/rajatdiptabiswas/.dotfiles/linux-apt-bash/scripts/setup.sh)"
+```
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/rajatdiptabiswas/.dotfiles/linux-apt-bash/scripts/install-vim.sh)"
+```
+
 ## Usage
 
 After installing `git`, clone the GitHub repository
