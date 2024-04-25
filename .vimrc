@@ -61,7 +61,7 @@ vnoremap <C-c> :w !pbcopy<CR><CR>
 
 " UI Config
 
-set number relativenumber       " show relative line numbers
+set number                      " show line numbers
 set showcmd                     " show last command in bottom bar
 set cursorline                  " highlight current line
 set wildmenu                    " visual autocomplete for command menu
