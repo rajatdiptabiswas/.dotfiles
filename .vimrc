@@ -83,6 +83,7 @@ set noerrorbells                " disable error bells
 syntax enable           " turn on syntax highlighting
 set background=dark     " set background color
 set termguicolors       " turn on true color mode
+set encoding=utf-8      " turn on UTF-8 encoding inside Vim
 highlight Comment cterm=italic gui=italic
 
 colorscheme dracula
