@@ -29,3 +29,8 @@ alias j='jobs -l'
 alias upgrade='sudo apt update && sudo apt upgrade -y'
 alias install='sudo apt install -y'
 alias remove='sudo apt autoremove -y'
+
+# iptables
+alias ipt='sudo iptables'
+alias iptl='sudo iptables -L -v -n --line-numbers'
+alias iptf='sudo iptables -F'
