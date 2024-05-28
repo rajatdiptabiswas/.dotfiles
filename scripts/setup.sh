@@ -14,10 +14,8 @@ done
 
 stow --dir "$HOME/.dotfiles" --target "$HOME" .
 
-BASHRC="$HOME/.bashrc"
-
-if ! grep -q "export TERM=xterm-256color" "$BASHRC"; then
-    echo "export TERM=xterm-256color" >> "$BASHRC"
+if ! grep -q "export TERM=xterm-256color" "$HOME/.bashrc"; then
+    echo "export TERM=xterm-256color" >> "$HOME/.bashrc"
 fi
 
-source $BASHRC
+source $HOME/.bashrc
