@@ -3,6 +3,8 @@ alias h='history'
 alias x='exit'
 alias _='sudo '
 
+alias brc='source $HOME/.bashrc'
+
 # dir
 alias md='mkdir -pv'
 alias rd='rm -r'
