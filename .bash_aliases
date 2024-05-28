@@ -8,7 +8,7 @@ alias md='mkdir -pv'
 alias rd='rm -r'
 
 # cd
-alias -='cd -'
+alias -- -='cd -'
 alias ~='cd ~'
 alias ..='cd ../'
 alias ...='cd ../../'
