@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 sudo apt update
 sudo apt install -y git stow
@@ -13,3 +13,5 @@ for DOTFILE in "${DOTFILES[@]}"; do
 done
 
 stow --dir "$HOME/.dotfiles" --target "$HOME" .
+
+source $HOME/.bashrc
