@@ -50,13 +50,8 @@ set wrap                " wrap lines
 
 " Clipboard
 
-" macOS
 vnoremap <C-x> :!pbcopy<CR>
 vnoremap <C-c> :w !pbcopy<CR><CR>
-
-" Linux
-" vnoremap <C-x> :!xclip -selection clipboard<CR>
-" vnoremap <C-c> :w !xclip -selection clipboard<CR><CR>
 
 
 " UI Config
