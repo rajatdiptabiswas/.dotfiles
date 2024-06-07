@@ -1,13 +1,12 @@
 # .dotfiles
 
-## Usage
-
-Install `zsh` shell
+## Setup
 
 ```bash
-sudo apt install zsh
-sudo chsh -s /bin/zsh $USER
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/rajatdiptabiswas/.dotfiles/macos-brew-zsh/scripts/setup.sh)"
 ```
+
+## Usage
 
 After installing `git`, clone the GitHub repository
 
@@ -15,14 +14,16 @@ After installing `git`, clone the GitHub repository
 git clone https://github.com/rajatdiptabiswas/.dotfiles.git $HOME/.dotfiles
 ```
 
+Install Homebrew `brew`
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 Install GNU Stow `stow`
 
 ```bash
-# macOS
 brew install stow
-
-# Ubuntu
-sudo apt install stow
 ```
 
 Run `stow` to symlink files in `$HOME/.dotfiles` to `$HOME`
