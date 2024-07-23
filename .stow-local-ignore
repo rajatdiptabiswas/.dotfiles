@@ -19,4 +19,6 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
+\.DS_Store
 scripts
+
