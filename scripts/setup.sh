@@ -10,6 +10,8 @@ DOTFILES=(
     ".tmux.conf"
     ".vimrc"
     ".config/kitty/kitty.conf"
+    ".oh-my-zsh/custom/aliases.sh"
+    ".oh-my-zsh/custom/iptables.sh"
 )
 
 for DOTFILE in "${DOTFILES[@]}"; do
