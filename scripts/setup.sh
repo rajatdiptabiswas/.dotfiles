@@ -6,7 +6,12 @@ sudo apt install -y git stow
 rm -rf "$HOME/.dotfiles/"
 git clone --branch linux-apt-bash https://github.com/rajatdiptabiswas/.dotfiles.git "$HOME/.dotfiles"
 
-DOTFILES=("$HOME/.tmux.conf" "$HOME/.vimrc" "$HOME/.bash_aliases")
+DOTFILES=(
+    "$HOME/.tmux.conf"
+    "$HOME/.vimrc"
+    "$HOME/.bash_aliases"
+    "$HOME/.config/kitty/kitty.conf"
+)
 
 for DOTFILE in "${DOTFILES[@]}"; do
     rm -f "$DOTFILE"
