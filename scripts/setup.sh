@@ -5,7 +5,12 @@ brew install stow
 rm -rf "$HOME/.dotfiles/"
 git clone --branch macos-brew-zsh https://github.com/rajatdiptabiswas/.dotfiles.git "$HOME/.dotfiles"
 
-DOTFILES=(".zshrc" ".tmux.conf" ".vimrc")
+DOTFILES=(
+    ".zshrc"
+    ".tmux.conf"
+    ".vimrc"
+    ".config/kitty/kitty.conf"
+)
 
 for DOTFILE in "${DOTFILES[@]}"; do
     rm -f "$HOME/$DOTFILE"
