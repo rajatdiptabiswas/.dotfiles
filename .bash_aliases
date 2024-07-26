@@ -1,5 +1,6 @@
 alias c='clear'
 alias h='history'
+alias j='jobs -l'
 alias x='exit'
 alias _='sudo '
 
@@ -24,11 +25,9 @@ alias ..5='cd ../../../../../'
 # ls
 alias l='ls -ACF'
 alias ll='ls -lAhF'
+alias lla='ls -lahF'
 alias lt='ls -lAhFt'
 alias ltr='ls -lAhFtr'
-
-# jobs
-alias j='jobs -l'
 
 # apt
 alias upgrade='sudo apt update && sudo apt upgrade -y'
