@@ -35,6 +35,12 @@ alias upgrade='sudo apt update && sudo apt upgrade -y'
 alias install='sudo apt install -y'
 alias remove='sudo apt autoremove -y'
 
+# systemctl
+alias sc='sudo systemctl'
+
+# journalctl
+alias jc='sudo journalctl'
+
 # iptables
 alias ipt='sudo iptables'
 alias iptr='sudo iptables -t raw'
