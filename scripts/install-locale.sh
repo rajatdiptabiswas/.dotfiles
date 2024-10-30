@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install locales
+sudo apt install -y locales
 
 sudo locale-gen en_US.UTF-8
 
