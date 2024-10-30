@@ -30,6 +30,7 @@ alias lt='ls -lAhFt'
 alias ltr='ls -lAhFtr'
 
 # apt
+alias update='sudo apt update'
 alias upgrade='sudo apt update && sudo apt upgrade -y'
 alias install='sudo apt install -y'
 alias remove='sudo apt autoremove -y'
