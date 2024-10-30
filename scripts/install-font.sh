@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt install -y wget unzip fontconfig
+
 declare -a fonts=(
     # CaskaydiaCove
     # CascadiaMono
