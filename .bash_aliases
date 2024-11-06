@@ -9,7 +9,7 @@ alias brc='source $HOME/.bashrc'
 
 # dir
 alias mkd='mkdir -pv'
-alias rmd='rm -r'
+alias rmd='rm -rv'
 
 # cd
 alias -- -='cd -'
