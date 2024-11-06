@@ -1,4 +1,5 @@
 alias c='clear'
+alias r='reset'
 alias h='history'
 alias j='jobs -l'
 alias x='exit'
