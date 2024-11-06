@@ -8,8 +8,8 @@ alias _='sudo '
 alias brc='source $HOME/.bashrc'
 
 # dir
-alias md='mkdir -pv'
-alias rd='rm -r'
+alias mkd='mkdir -pv'
+alias rmd='rm -r'
 
 # cd
 alias -- -='cd -'
