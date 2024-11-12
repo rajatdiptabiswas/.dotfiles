@@ -31,5 +31,3 @@ if ! grep -Fq 'export PS1="\n${PS1/%???/\\n\\$ }"' "$HOME/.bashrc"; then
     # ${PS1/%???/\\n\\$ } replaces the last 3 characters of PS1 '\$ ' with '\n\$ '
     echo 'export PS1="\n${PS1/%???/\\n\\$ }"' >> "$HOME/.bashrc"
 fi
-
-source $HOME/.bashrc
