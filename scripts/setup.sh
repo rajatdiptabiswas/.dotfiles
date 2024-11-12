@@ -26,4 +26,10 @@ if ! grep -q "export TERM=xterm-256color" "$HOME/.bashrc"; then
     echo "export TERM=xterm-256color" >> "$HOME/.bashrc"
 fi
 
+if ! grep -Fq 'export PS1="\n${PS1/%???/\\n\\$ }"' "$HOME/.bashrc"; then
+    # add a new line before the prompt and place '$' on the next line
+    # ${PS1/%???/\\n\\$ } replaces the last 3 characters of PS1 '\$ ' with '\n\$ '
+    echo 'export PS1="\n${PS1/%???/\\n\\$ }"' >> "$HOME/.bashrc"
+fi
+
 source $HOME/.bashrc
