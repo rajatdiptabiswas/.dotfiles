@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
+# exit script if any command fails
+set -e
+
 sudo apt update
 sudo apt install -y git stow
 
-rm -rf "$HOME/.dotfiles/"
+rm -rf "$HOME/.dotfiles"
 git clone --branch linux-apt-bash https://github.com/rajatdiptabiswas/.dotfiles.git "$HOME/.dotfiles"
 
 DOTFILES=(
