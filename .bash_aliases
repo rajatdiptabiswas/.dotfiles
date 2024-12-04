@@ -42,6 +42,11 @@ alias sc='sudo systemctl'
 # journalctl
 alias jc='sudo journalctl'
 
+# rsync
+alias rs='rsync -avh --progress'
+alias rsp='rsync -avh --progress --partial'
+alias rsdr='rsync -avh --progress --dry-run'
+
 # iptables
 alias ipt='sudo iptables'
 alias iptr='sudo iptables -t raw'
