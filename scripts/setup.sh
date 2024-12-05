@@ -12,6 +12,7 @@ DOTFILES=(
     ".config/kitty/kitty.conf"
     ".oh-my-zsh/custom/aliases.sh"
     ".oh-my-zsh/custom/iptables.sh"
+    ".oh-my-zsh/custom/rsync.sh"
 )
 
 for DOTFILE in "${DOTFILES[@]}"; do
