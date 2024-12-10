@@ -10,6 +10,7 @@ DOTFILES=(
     ".tmux.conf"
     ".vimrc"
     ".config/kitty/kitty.conf"
+    ".config/aerospace/aerospace.toml"
     ".config/kitty/current-theme.conf"
     ".oh-my-zsh/custom/aliases.sh"
     ".oh-my-zsh/custom/iptables.sh"
