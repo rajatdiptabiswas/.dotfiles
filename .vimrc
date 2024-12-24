@@ -15,6 +15,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 " Plug 'mbbill/undotree'
 " Plug 'tpope/vim-fugitive'
+Plug 'francoiscabrol/ranger.vim'
 call plug#end()                         " initialize plugin system
 
 
@@ -201,6 +202,13 @@ inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<C-g>
 " use <Tab> and <S-Tab> to navigate the completion list
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+
+
+" ranger
+" map <leader>f :Ranger<CR>         " default mapping
+" let g:NERDTreeHijackNetrw = 0     " add this line if you use NERDTree
+let g:ranger_replace_netrw = 1      " open ranger when vim open a directory
 
 
 
