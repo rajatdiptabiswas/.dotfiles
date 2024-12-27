@@ -23,6 +23,7 @@ brew "reattach-to-user-namespace"
 brew "sshuttle"
 brew "stow"
 brew "syncthing", restart_service: true
+brew "tldr"
 brew "tmux"
 brew "tree"
 brew "wget"
