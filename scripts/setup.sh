@@ -10,8 +10,9 @@ DOTFILES=(
     ".tmux.conf"
     ".vimrc"
     ".config/kitty/kitty.conf"
-    ".config/aerospace/aerospace.toml"
     ".config/kitty/current-theme.conf"
+    ".config/aerospace/aerospace.toml"
+    ".config/macchina/macchina.toml"
     ".oh-my-zsh/custom/aliases.sh"
     ".oh-my-zsh/custom/iptables.sh"
     ".oh-my-zsh/custom/rsync.sh"
@@ -22,3 +23,4 @@ for DOTFILE in "${DOTFILES[@]}"; do
 done
 
 stow --dir "$HOME/.dotfiles" --target "$HOME" .
+
