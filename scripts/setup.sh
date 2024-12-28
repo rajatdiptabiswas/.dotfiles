@@ -13,6 +13,7 @@ DOTFILES=(
     ".config/kitty/current-theme.conf"
     ".config/aerospace/aerospace.toml"
     ".config/macchina/macchina.toml"
+    ".config/ranger/rc.conf"
     ".oh-my-zsh/custom/aliases.sh"
     ".oh-my-zsh/custom/iptables.sh"
     ".oh-my-zsh/custom/rsync.sh"
