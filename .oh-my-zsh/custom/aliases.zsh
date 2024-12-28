@@ -11,7 +11,7 @@ alias mkd='mkdir -pv'
 alias rmd='rm -rv'
 
 # ls
-alias l='ls -ACF'
+alias l='ls -AF'
 alias ll='ls -lAhF'
 alias lla='ls -lahF'
 alias lt='ls -lAhFt'
