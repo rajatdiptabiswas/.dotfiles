@@ -208,7 +208,7 @@ inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 " ranger
 " map <leader>f :Ranger<CR>         " default mapping
 " let g:NERDTreeHijackNetrw = 0     " add this line if you use NERDTree
-let g:ranger_replace_netrw = 1      " open ranger when vim open a directory
+" let g:ranger_replace_netrw = 1    " open ranger when vim open a directory
 
 
 
