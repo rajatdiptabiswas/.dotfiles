@@ -14,6 +14,8 @@ DOTFILES=(
     ".config/aerospace/aerospace.toml"
     ".config/macchina/macchina.toml"
     ".config/ranger/rc.conf"
+    ".config/tmux-powerline/config.sh"
+    ".config/tmux-powerline/themes/theme.sh"
     ".oh-my-zsh/custom/aliases.sh"
     ".oh-my-zsh/custom/iptables.sh"
     ".oh-my-zsh/custom/rsync.sh"
