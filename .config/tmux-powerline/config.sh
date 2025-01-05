@@ -1,4 +1,3 @@
-# Default configuration file for tmux-powerline.
 # Modeline {
 #	 vi: foldmarker={,} foldmethod=marker foldlevel=0 tabstop=4 filetype=sh
 # }
@@ -10,7 +9,7 @@
 	export TMUX_POWERLINE_PATCHED_FONT_IN_USE="true"
 
 	# The theme to use.
-	export TMUX_POWERLINE_THEME="default"
+	export TMUX_POWERLINE_THEME="theme"
 	# Overlay directory to look for themes. There you can put your own themes outside the repo. Fallback will still be the "themes" directory in the repo.
 	export TMUX_POWERLINE_DIR_USER_THEMES="${XDG_CONFIG_HOME:-$HOME/.config}/tmux-powerline/themes"
 	# Overlay directory to look for segments. There you can put your own segments outside the repo. Fallback will still be the "segments" directory in the repo.
@@ -29,7 +28,7 @@
 	export TMUX_POWERLINE_STATUS_JUSTIFICATION="centre"
 
 	# The maximum length of the left status bar.
-	export TMUX_POWERLINE_STATUS_LEFT_LENGTH="60"
+	export TMUX_POWERLINE_STATUS_LEFT_LENGTH="90"
 	# The maximum length of the right status bar.
 	export TMUX_POWERLINE_STATUS_RIGHT_LENGTH="90"
 
@@ -300,7 +299,7 @@
 
 # pwd.sh {
 	# Maximum length of output.
-	export TMUX_POWERLINE_SEG_PWD_MAX_LEN="40"
+	export TMUX_POWERLINE_SEG_PWD_MAX_LEN="30"
 # }
 
 # time.sh {
@@ -342,11 +341,11 @@
 	# Branch symbol for SVN repositories
 	# export TMUX_POWERLINE_SEG_VCS_BRANCH_SVN_SYMBOL="${TMUX_POWERLINE_SEG_VCS_BRANCH_DEFAULT_SYMBOL}"
 	# Branch symbol colour for git repositories
-	export TMUX_POWERLINE_SEG_VCS_BRANCH_GIT_SYMBOL_COLOUR="5"
+	export TMUX_POWERLINE_SEG_VCS_BRANCH_GIT_SYMBOL_COLOUR="122"
 	# Branch symbol colour for hg/mercurial repositories
-	export TMUX_POWERLINE_SEG_VCS_BRANCH_HG_SYMBOL_COLOUR="45"
+	export TMUX_POWERLINE_SEG_VCS_BRANCH_HG_SYMBOL_COLOUR="122"
 	# Branch symbol colour for SVN repositories
-	export TMUX_POWERLINE_SEG_VCS_BRANCH_SVN_SYMBOL_COLOUR="220"
+	export TMUX_POWERLINE_SEG_VCS_BRANCH_SVN_SYMBOL_COLOUR="122"
 # }
 
 # vcs_compare.sh {
