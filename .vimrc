@@ -46,8 +46,8 @@ set smarttab            " be smart when using tabs
 set autoindent          " auto indent
 set smartindent         " smart indent
 set wrap                " wrap lines
-
-
+set list                " show invisible characters
+set listchars=tab:▸\ ,trail:·,nbsp:⦸,extends:>,precedes:<
 
 " Clipboard
 
@@ -69,7 +69,7 @@ set ruler                       " always show current position
 set hidden                      " buffer becomes hidden when it is abandoned
 set foldcolumn=1                " add extra margin to the left
 set backspace=eol,start,indent  " add backspace defaults
-set whichwrap+=<,>,h,l          " allow cursor left/right to move to previous/next line at beginning/end of line 
+set whichwrap+=<,>,h,l          " allow cursor left/right to move to previous/next line at beginning/end of line
 set noerrorbells                " disable error bells
 
 
@@ -270,12 +270,8 @@ augroup configgroup
     autocmd VimEnter * highlight clear SignColumn
     autocmd BufWritePre *.php,*.py,*.js,*.txt,*.hs,*.java,*.md call <SID>StripTrailingWhitespaces()
     autocmd FileType java setlocal noexpandtab
-    autocmd FileType java setlocal list
-    autocmd FileType java setlocal listchars=tab:+\ ,eol:-
     autocmd FileType java setlocal formatprg=par\ -w80\ -T4
     autocmd FileType php setlocal expandtab
-    autocmd FileType php setlocal list
-    autocmd FileType php setlocal listchars=tab:+\ ,eol:-
     autocmd FileType php setlocal formatprg=par\ -w80\ -T4
     autocmd FileType ruby setlocal tabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
