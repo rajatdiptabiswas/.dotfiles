@@ -90,11 +90,11 @@ colorscheme dracula
 
 " Leader Shortcuts
 
-let mapleader=","       " change leader from \ to ,
+" let mapleader=","       " change leader from \ to ,
 
 " remap esc
-inoremap jk <esc>
-inoremap kj <esc>
+" inoremap jk <esc>
+" inoremap kj <esc>
 
 " save session
 " nnoremap <leader>s :mksession<CR>
