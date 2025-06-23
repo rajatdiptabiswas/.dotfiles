@@ -20,7 +20,7 @@ for DOTFILE in "${DOTFILES[@]}"; do
     rm -f "$DOTFILE"
 done
 
-stow --dir "$HOME/.dotfiles" --target "$HOME" .
+stow --dir "$HOME/.dotfiles" --target "$HOME" --no-folding .
 
 if ! grep -q "export TERM=xterm-256color" "$HOME/.bashrc"; then
     echo "export TERM=xterm-256color" >> "$HOME/.bashrc"
