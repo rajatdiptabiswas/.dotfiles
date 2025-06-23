@@ -25,5 +25,5 @@ for DOTFILE in "${DOTFILES[@]}"; do
     rm -f "$HOME/$DOTFILE"
 done
 
-stow --dir "$HOME/.dotfiles" --target "$HOME" .
+stow --dir "$HOME/.dotfiles" --target "$HOME" --no-folding .
 
