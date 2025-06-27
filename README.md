@@ -1,10 +1,6 @@
 # .dotfiles
 
-## Setup
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/rajatdiptabiswas/.dotfiles/linux-apt-bash/scripts/setup.sh)"
-```
+Amazon Linux 2 Cloud Desktop dotfiles
 
 ## Usage
 
@@ -14,17 +10,14 @@ After installing `git`, clone the GitHub repository
 git clone https://github.com/rajatdiptabiswas/.dotfiles.git $HOME/.dotfiles
 ```
 
-Install GNU Stow `stow`
+Run the required scripts from `$HOME/.dotfiles/scripts`
 
 ```bash
-sudo apt install stow
-```
-
-Run `stow` to symlink files in `$HOME/.dotfiles` to `$HOME`
-
-```bash
-cd ~/.dotfiles
-stow .
+$HOME/.dotfiles/scripts/install-brew.sh
+$HOME/.dotfiles/scripts/setup-aliases.sh
+$HOME/.dotfiles/scripts/setup-dotfiles.sh
+$HOME/.dotfiles/scripts/setup-tmux.sh
+$HOME/.dotfiles/scripts/setup-vim.sh
 ```
 
 ## Acknowledgements
