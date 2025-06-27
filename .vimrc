@@ -49,10 +49,6 @@ set wrap                " wrap lines
 set list                " show invisible characters
 set listchars=tab:▸\ ,trail:·,nbsp:⦸,extends:>,precedes:<
 
-" Clipboard
-
-vnoremap <C-x> :!xclip -selection clipboard<CR>
-vnoremap <C-c> :w !xclip -selection clipboard<CR><CR>
 
 
 " UI Config
