@@ -3,7 +3,8 @@
 " vim-plug
 
 call plug#begin('~/.vim/plugged')       " specify a directory for plugins
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+" Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -82,7 +83,8 @@ set termguicolors       " turn on true color mode
 set encoding=utf-8      " turn on UTF-8 encoding inside Vim
 highlight Comment cterm=italic gui=italic
 
-colorscheme dracula
+colorscheme catppuccin_macchiato
+" colorscheme dracula
 " let g:gruvbox_italic=1
 " colorscheme gruvbox
 
@@ -148,6 +150,8 @@ nnoremap gV `[v`]
 
 
 " vim-airline
+
+let g:airline_theme = 'catppuccin_macchiato'
 
 let g:airline_powerline_fonts = 1
 
