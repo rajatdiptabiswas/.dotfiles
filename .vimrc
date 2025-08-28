@@ -96,7 +96,10 @@ colorscheme dracula
 " nnoremap <leader>s :mksession<CR>
 
 " toggle relative line numbering
-nmap <leader>n :call ToggleNumber()<CR>
+nmap <leader>r :call ToggleRelativeNumber()<CR>
+
+" toggle line numbers
+nmap <leader>l :call ToggleLineNumber()<CR>
 
 
 
@@ -296,13 +299,29 @@ set writebackup
 
 " Custom Helper Functions
 
-" toggle between number and relativenumber
-function! ToggleNumber()
+" toggle relative line numbering
+function! ToggleRelativeNumber()
     if(&relativenumber == 1)
         set norelativenumber
         set number
+        set foldcolumn=1
     else
         set relativenumber
+        set number
+        set foldcolumn=1
+    endif
+endfunc
+
+" toggle line numbers
+function! ToggleLineNumber()
+    if(&number == 1)
+        set norelativenumber
+        set nonumber
+        set foldcolumn=0
+    else
+        set norelativenumber
+        set number
+        set foldcolumn=1
     endif
 endfunc
 
