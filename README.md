@@ -7,7 +7,7 @@ Amazon Linux 2 Cloud Desktop dotfiles
 After installing `git`, clone the GitHub repository
 
 ```bash
-git clone https://github.com/rajatdiptabiswas/.dotfiles.git $HOME/.dotfiles
+git clone -b amazonlinux2-yum-zsh https://github.com/rajatdiptabiswas/.dotfiles.git $HOME/.dotfiles
 ```
 
 Run the required scripts from `$HOME/.dotfiles/scripts`
