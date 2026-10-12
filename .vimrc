@@ -45,7 +45,6 @@ set shiftwidth=4        " number of spaces for an indent
 set expandtab           " tabs are spaces
 set smarttab            " be smart when using tabs
 set autoindent          " auto indent
-set smartindent         " smart indent
 set wrap                " wrap lines
 set list                " show invisible characters
 set listchars=tab:▸\ ,trail:·,nbsp:⦸,extends:>,precedes:<
