@@ -50,10 +50,21 @@ set wrap                " wrap lines
 set list                " show invisible characters
 set listchars=tab:▸\ ,trail:·,nbsp:⦸,extends:>,precedes:<
 
+" enable bracketed paste inside tmux/screen
+if exists('&t_BE') && &term =~# '^\(tmux\|screen\)'
+    let &t_BE = "\<Esc>[?2004h"   " turn bracketed paste on
+    let &t_BD = "\<Esc>[?2004l"   " turn it off on exit
+    let &t_PS = "\<Esc>[200~"     " paste start marker
+    let &t_PE = "\<Esc>[201~"     " paste end marker
+endif
+
+
+
 " Clipboard
 
 vnoremap <C-x> :!xclip -selection clipboard<CR>
 vnoremap <C-c> :w !xclip -selection clipboard<CR><CR>
+
 
 
 " UI Config
