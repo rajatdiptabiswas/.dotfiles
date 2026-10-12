@@ -107,6 +107,9 @@ nmap <leader>r :call ToggleRelativeNumber()<CR>
 " toggle line numbers
 nmap <leader>l :call ToggleLineNumber()<CR>
 
+" toggle paste mode
+nnoremap <leader>p :set paste! paste?<CR>
+
 
 
 " Searching
